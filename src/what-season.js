@@ -1,6 +1,6 @@
 const CustomError = require("../extensions/custom-error");
 module.exports = function getSeason(date) {
-    if (!== date) {
+    if (date == undefined) {
         return 'Unable to determine the time of year!';
     }
     if (Object.prototype.toString.call(date) !== '[object Date]') {
@@ -10,5 +10,5 @@ module.exports = function getSeason(date) {
 };
 
 let mounth = {
-    "12": "winter", "01": "winter", "02": "winter", "03": "spring", "04": "spring", "05": "spring", "06": "summer", "07": "summer", "08": "summer", "09": "autumn", "10": "autumn", "11": "autumn"
+    "Dec": "winter", "Jan": "winter", "Feb": "winter", "Mar": "spring", "Apr": "spring", "May": "spring", "Jun": "summer", "Jul": "summer", "Aug": "summer", "Sep": "autumn", "Oct": "autumn", "Nov": "autumn"
 }
