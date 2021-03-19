@@ -11,7 +11,7 @@ module.exports = function getSeason(date) {
 
  let month = date.getMonth();
     if ( month <= 1 ) return "winter";
-    if ( month <= 4 ) return "spring;
+    if ( month <= 4 ) return "spring";
     if ( month <= 7 ) return "summer";
     if ( month <= 10 ) return "autumn";
 
