@@ -9,10 +9,7 @@ module.exports = function getSeason(date) {
     return Season[date.toString().split(" ")[1]];
 };
 
- let month = date.getMonth();
-    if ( month <= 1 ) return "winter";
-    if ( month <= 4 ) return "spring";
-    if ( month <= 7 ) return "summer";
-    if ( month <= 10 ) return "autumn";
+let mounth = {
+    "Dec": "winter", "Jan": "winter", "Feb": "winter", "Mar": "spring", "Apr": "spring", "May": "spring", "Jun": "summer", "Jul": "summer", "Aug": "summer", "Sep": "autumn", "Oct": "autumn", "Nov": "autumn"
 
 }
