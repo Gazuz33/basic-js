@@ -19,10 +19,11 @@ const CustomError = require("../extensions/custom-error");
   for (let i = 0; i < options.additionRepeatTimes; i++) {
     array.push(options.addition);
   }
-  let arrayStr = [];
+
     
   let str = array.join(options.additionSeparator);
   let strNext = str + str;
+        let arrayStr = [];
         for (let i = 0; i < options.repeatTimes; i++) {
           arrayStr.push(strNext);
         }
